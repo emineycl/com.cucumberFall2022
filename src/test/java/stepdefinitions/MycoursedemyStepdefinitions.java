@@ -29,7 +29,7 @@ public class MycoursedemyStepdefinitions {
 
     @And("accept butonuna basar")
     public void acceptButonunabasar() {
-        mycoursedemyPage.cookies.click();
+        mycoursedemyPage.acceptCookies.click();
     }
     @Then("myCourse giris yapabildigini test eder")
     public void my_course_giris_yapabildigini_test_eder() {

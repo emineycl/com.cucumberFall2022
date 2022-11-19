@@ -22,10 +22,10 @@ public class MycoursedemyPage {
     @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButonu;
 
-    @FindBy (xpath = "//*[text()='Accept'])")
-    public WebElement cookies;
-
     @FindBy(linkText = "My courses")
     public WebElement coursesLinki;
+
+    @FindBy(xpath = "//*[text()='Accept']")
+    public WebElement acceptCookies;
 
 }
