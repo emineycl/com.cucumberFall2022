@@ -3,7 +3,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
 
   # 3 farkli senaryo ile negatif login testi yapalim
 
-
+@pt2
   Scenario: TC13 Yanlis email, dogru password ile giris yapilamamali
 
     Given Kullanici "myUrl" anasayfaya gider

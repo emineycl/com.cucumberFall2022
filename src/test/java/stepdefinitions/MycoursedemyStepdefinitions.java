@@ -11,19 +11,19 @@ public class MycoursedemyStepdefinitions {
 
     @Then("myCourse anasayfa login linkine tiklar")
     public void my_course_anasayfa_login_linkine_tiklar() {
-        mycoursedemyPage.loginLinki.click();
+        mycoursedemyPage.loginLink.click();
     }
     @Then("myCourse kullanici adi olarak {string} girer")
     public void my_course_kullanici_adi_olarak_girer(String verilenEmail) {
-        mycoursedemyPage.emailKutusu.sendKeys(ConfigReader.getProperty(verilenEmail));
+        mycoursedemyPage.emailBox.sendKeys(ConfigReader.getProperty(verilenEmail));
     }
     @Then("myCourse password olarak {string} girer")
     public void my_course_password_olarak_girer(String verilenPassword) {
-        mycoursedemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty(verilenPassword));
+        mycoursedemyPage.passwordBox.sendKeys(ConfigReader.getProperty(verilenPassword));
     }
     @Then("myCourse login butonuna basar")
     public void my_course_login_butonuna_basar() {
-        mycoursedemyPage.loginButonu.click();
+        mycoursedemyPage.loginButton.click();
     }
 
 
@@ -38,6 +38,6 @@ public class MycoursedemyStepdefinitions {
 
     @Then("myCourse giris yapilamadigini test eder")
     public void mycourseGirisYapilamadiginiTestEder() {
-        Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
+        Assert.assertTrue(mycoursedemyPage.loginLink.isDisplayed());
     }
 }
