@@ -7,7 +7,6 @@ import utilities.Driver;
 
 public class AmazonPage {
 
-    public WebElement aramaKutusu;
 
     public AmazonPage(){PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -15,7 +14,7 @@ public class AmazonPage {
     // amazondaki arama kutusu locate edelim
 
     @FindBy(id="twotabsearchtextbox")
-        public WebElement aramakutusu;
+        public WebElement aramaKutusu;
 
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement aramaSonucElementi;

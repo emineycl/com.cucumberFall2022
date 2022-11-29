@@ -10,6 +10,10 @@ import utilities.ConfigReader;
 import utilities.Driver;
 public class AmazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
+    @Given("Kullanici amazon anasayfaya gider")
+    public void kullaniciAmazonAnasayfayaGider() {
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+    }
     @When("Arama cubuguna Nutella yazip aratir")
     public void arama_cubuguna_nutella_yazip_aratir() {
         amazonPage.aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
@@ -24,10 +28,7 @@ public class AmazonStepDefinitions {
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
-    @Given("Kullanici amazon anasayfaya gider")
-    public void kullaniciAmazonAnasayfayaGider() {
-        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
-    }
+
     @Then("Arama kutusuna Java yazip aratir")
     public void aramaKutusunaJavaYazipAratir() {
         amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);

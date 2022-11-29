@@ -1,5 +1,3 @@
-
-
 Feature: US1002_Amazon Arama Testi
 
   # Kullanicinin arama yapmasi icin 3 scenario olusturun
