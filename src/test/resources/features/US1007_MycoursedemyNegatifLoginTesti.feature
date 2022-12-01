@@ -7,7 +7,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC13 Yanlis email, dogru password ile giris yapilamamali
 
     Given Kullanici "myUrl" anasayfaya gider
-    #And myCourse cookies butonuna basar
+    And accept butonuna basar
     Then myCourse anasayfa login linkine tiklar
     And myCourse kullanici adi olarak "myYanlisEmail" girer
     And myCourse password olarak "myGecerliPassword" girer
@@ -18,7 +18,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC14 gecerli email, yanlis password ile giris yapilamamali
 
     Given Kullanici "myUrl" anasayfaya gider
-    #And myCourse cookies butonuna basar
+    And accept butonuna basar
     Then myCourse anasayfa login linkine tiklar
     And myCourse kullanici adi olarak "myGecerliEmail" girer
     And myCourse password olarak "myYanlisPassword" girer
@@ -29,7 +29,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC15 Yanlis email, yanlis password ile giris yapilamamali
 
     Given Kullanici "myUrl" anasayfaya gider
-    #And myCourse cookies butonuna basar
+    And accept butonuna basar
     Then myCourse anasayfa login linkine tiklar
     And myCourse kullanici adi olarak "myYanlisEmail" girer
     And myCourse password olarak "myYanlisPassword" girer

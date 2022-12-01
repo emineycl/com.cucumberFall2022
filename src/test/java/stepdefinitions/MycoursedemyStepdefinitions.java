@@ -13,6 +13,10 @@ public class MycoursedemyStepdefinitions {
     public void my_course_anasayfa_login_linkine_tiklar() {
         mycoursedemyPage.loginLink.click();
     }
+    @And("accept butonuna basar")
+    public void acceptButonunabasar() {
+        mycoursedemyPage.acceptCookies.click();
+    }
     @Then("myCourse kullanici adi olarak {string} girer")
     public void my_course_kullanici_adi_olarak_girer(String verilenEmail) {
         mycoursedemyPage.emailBox.sendKeys(ConfigReader.getProperty(verilenEmail));
@@ -21,16 +25,12 @@ public class MycoursedemyStepdefinitions {
     public void my_course_password_olarak_girer(String verilenPassword) {
         mycoursedemyPage.passwordBox.sendKeys(ConfigReader.getProperty(verilenPassword));
     }
+
     @Then("myCourse login butonuna basar")
     public void my_course_login_butonuna_basar() {
-        mycoursedemyPage.loginButton.click();
+        mycoursedemyPage.loginButonu.click();
     }
 
-
-    @And("accept butonuna basar")
-    public void acceptButonunabasar() {
-        mycoursedemyPage.acceptCookies.click();
-    }
     @Then("myCourse giris yapabildigini test eder")
     public void my_course_giris_yapabildigini_test_eder() {
         Assert.assertTrue(mycoursedemyPage.coursesLinki.isDisplayed());

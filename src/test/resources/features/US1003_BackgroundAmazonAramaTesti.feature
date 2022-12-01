@@ -3,9 +3,9 @@ Feature: US1003 Background kullanarak Amazon arama testi
 
   Background: amazon anasayfaya gitme
     Given Kullanici amazon anasayfaya gider
+
   @pt1
   Scenario: TC05  Kullanici amazonda Nutella aramasi yapar
-
 
     Then Arama cubuguna Nutella yazip aratir
     And Arama sonuclarinin Nutella icerdigini test eder
@@ -16,6 +16,7 @@ Feature: US1003 Background kullanarak Amazon arama testi
     Then Arama kutusuna Java yazip aratir
     And Arama sonuclarinin Java icerdigini test eder
     And Sayfayi kapatir
+
   @apple
   Scenario: TC07 Kullanici amazonda Apple aramasi yapar
 

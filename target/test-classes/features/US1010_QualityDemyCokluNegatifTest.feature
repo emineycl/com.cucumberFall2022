@@ -1,5 +1,5 @@
 Feature: US1010 Kullanici liste olarak verilen wrong user ile negatif login testi
-@wip
+
   Scenario Outline:
 
     Given Kullanici "myUrl" anasayfaya gider
